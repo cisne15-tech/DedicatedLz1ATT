@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DedicatedLz</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+
+    <div class="tela-intro" id="telaIntro">
+        <div class="texto-intro">Clique aqui 🐭</div>
+    </div>
+
+    <audio id="musica">
+        <source src="Mitski - My Love Mine All Mine (Official Lyric Video) - MitskiVEVO (youtube).mp3" type="audio/mpeg">
+       
+    </audio>
+    
+    <header>
+        <h1>Maria Luiza</h1>
+        <img src="Captura de tela 2026-02-22 153441.png" class="luizafoto">
+    </header>
+    <main>
+        <section>
+            <button class="btn-photo"><a href="Fotos.html">Photos</a></button>
+        </section>
+        <section>
+            <button class="ttn-photo"><a href="prarata.html">bobbie goods</a></button>
+        </section>
+    </main>
+    <script>
+        const telaIntro = document.getElementById('telaIntro');
+        const musica = document.getElementById('musica');
+        
+        telaIntro.addEventListener('click', function() {
+            telaIntro.classList.add('oculta');
+            musica.play();
+        });
+    </script>
+</body>
+</html>

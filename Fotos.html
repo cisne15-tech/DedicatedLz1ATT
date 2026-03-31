@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Album - Fotos</title>
+    <link rel="stylesheet" href="Fotos.css">
+</head>
+<body>
+    <div class="tela-intro" id="telaIntro">
+        <div class="texto-intro">Clique aqui</div>
+    </div>
+
+    <audio id="musica">
+        <source src="Coldplay - Sparks - Somber Sounds (youtube).mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>✨ Album da fogaça ✨</h1>
+        <nav>
+            <ul>
+                <li><a href="DedicatedProLz.html">Início</a></li>
+                <li><a href="Fotos.html">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="photo-placeholder">
+                    <span><img src="anitta.jpeg" alt="Young woman with long dark hair in a casual venue with warm string lights and wooden tables in the background, looking downward with a calm and contemplative expression" class="luiza1"></span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo-placeholder">
+                    <span><img src="luiza55.jpeg" alt="Foto 2" class="luiza2"></span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo-placeholder">
+                    <span><img src="luiza66.jpeg" alt="Foto 3" class=""></span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo-placeholder">
+                    <span><img src="luiza88.jpg" alt="Foto 4"></span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo-placeholder">
+                    <span><img src="luiza10.jpeg" alt="Foto 5"></span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo-placeholder">
+                    <span><img src="belinha1.jpeg" alt="Foto 6"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fora">
+            <h3>Tem mais coisa pra bota</h3>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Maria Luiza. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const telaIntro = document.getElementById('telaIntro');
+        const musica = document.getElementById('musica');
+        
+        telaIntro.addEventListener('click', function() {
+            telaIntro.classList.add('oculta');
+            musica.play();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    font-family: sans-serif;
+    color: pink;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(94, 2, 94), pink);
+}
+
+nav{
+    display: flex;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav:hover {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}

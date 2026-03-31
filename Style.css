@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.tela-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #960075 0%, #fc23df 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+    transition: opacity 0.5s ease-out;
+}
+
+.tela-intro.oculta {
+    display: none;
+}
+
+.texto-intro {
+    font-size: 3em;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: #960075;
+}
+
+header h1 {
+    background: linear-gradient(to right, #fc23df, #960075);
+    font-size: clamp(1.6rem, 6vw, 3em);
+    color: #fffdff;
+    margin: 0 0 8px 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height: 1.05;
+    max-width: 95%;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid #fffdff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    gap: 30px; /* espaçamento entre os sections/botões */
+    background-image: linear-gradient(to bottom, #960075, rgb(255, 255, 255));
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-photo {
+    background-image: url('charlotte\ la\ bouff\ aesthetic\ _\ the\ princess\ and\ the\ frog.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.btn-photo:hover {
+    transform: scale(1.05);
+}
+
+.ttn-photo {
+     background-image: url('@itgirlhan.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.ttn-photo:hover {
+    transform: scale(1.05);
+}
+
+.luizafoto {
+    display: block;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin: 20px auto 0 auto; /* centraliza abaixo do h1 */
+    object-fit: cover;
+}
+
+
